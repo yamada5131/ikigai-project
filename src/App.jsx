@@ -1,6 +1,15 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./pages/Auth/Login"
+import Register from "./pages/Auth/Register";
 function App() {
   return (
-    <div className="bg-blue-500">Hello</div>
+      <Router>
+            <Routes>
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+            </Routes>
+        </Router>
+
   )
 }
 
