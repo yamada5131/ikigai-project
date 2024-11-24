@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Home from "./pages/Home";
 import Layout from "./components/layouts/Layout";
+import Login from "./pages/Auth/Login";
+import Register from "./pages/Auth/Register";
 export default function App() {
   return (
     <BrowserRouter>
@@ -10,6 +12,8 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
         </Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );
