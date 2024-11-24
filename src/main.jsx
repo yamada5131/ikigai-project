@@ -1,13 +1,9 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
+import "./index.css";
+import Home from "./pages/Home";
+import Layout from "./components/layouts/Layout";
 import CreateNotification from "./pages/CreateNoti";
-import './index.css'
-// import Home from "./pages/Home";
-// import Blogs from "./pages/Blogs";
-// import Contact from "./pages/Contact";
-// import NoPage from "./pages/NoPage";
-import Home from './pages/Home'
 export default function App() {
   return (
     <BrowserRouter>
@@ -21,5 +17,6 @@ export default function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
+
