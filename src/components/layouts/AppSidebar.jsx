@@ -22,7 +22,7 @@ export default function AppSidebar() {
           <SidebarItem href="#" icon={HiHome}>
             ホームぺ-ジ
           </SidebarItem>
-          <SidebarItem href="#" icon={HiViewBoards}>
+          <SidebarItem href="/classdetails" icon={HiViewBoards}>
             クラス詳細
           </SidebarItem>
           <SidebarItem href="#" icon={HiInbox}>
