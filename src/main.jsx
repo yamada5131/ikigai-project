@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
+import CreateNotification from "./pages/CreateNoti";
 import './index.css'
 // import Home from "./pages/Home";
 // import Blogs from "./pages/Blogs";
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/createNoti" element={<CreateNotification />} />
         </Route>
       </Routes>
     </BrowserRouter>
