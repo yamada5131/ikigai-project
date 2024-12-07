@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import AppLayout from "../../components/layouts/AppLayout";
-import FileAttachment from "../../components/layouts/FileAttachment";
+import FileAttachment from "../../components/CreateNoti/FileAttachment";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const CreateNotification = () => {
@@ -23,17 +23,17 @@ const CreateNotification = () => {
   };
 
   const handleCancelFileAttachForm = () => {
-    setIsModalOpen(false)
-  }
+    setIsModalOpen(false);
+  };
   const handleDeleteFile = (fileId) => {
     const newFiles = files.filter((file) => file.id !== fileId);
     setFiles(newFiles);
     toast("Delete Successfully!");
   };
   const handleSubmitFile = () => {
-    toast("Submit successfully!")
-    setIsModalOpen(false)
-  }
+    toast("Submit successfully!");
+    setIsModalOpen(false);
+  };
   useEffect(() => {
     let timer;
     if (isLoading) {
@@ -129,7 +129,6 @@ const CreateNotification = () => {
           handleCancelFileAttachForm={handleCancelFileAttachForm}
         />
       )}
-      
     </AppLayout>
   );
 };

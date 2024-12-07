@@ -2,7 +2,7 @@ import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import FileBar from "./FileBar";
 import FileUploadProgress from "./FileUploadProgress";
 import PropTypes from "prop-types";
-import ClearIcon from '@mui/icons-material/Clear';
+import ClearIcon from "@mui/icons-material/Clear";
 import { Dialog, DialogContent, DialogTitle } from "@mui/material";
 const FileAttachment = ({
   isOpen,
@@ -14,13 +14,17 @@ const FileAttachment = ({
   handleUploadClick,
   isLoading,
   handleSubmitFile,
-  handleCancelFileAttachForm
+  handleCancelFileAttachForm,
 }) => {
   return (
     <Dialog open={isOpen} onClose={onClose} fullWidth maxWidth="sm">
-      <DialogTitle sx={{ display: 'flex', justifyContent: "space-between"}}>
+      <DialogTitle sx={{ display: "flex", justifyContent: "space-between" }}>
         <p className="text-center text-2xl font-bold">新しい通知の作成</p>
-        <ClearIcon fontSize="large" onClick={handleCancelFileAttachForm} className="cursor-pointer"/>
+        <ClearIcon
+          fontSize="large"
+          onClick={handleCancelFileAttachForm}
+          className="cursor-pointer"
+        />
       </DialogTitle>
       <DialogContent>
         <div className="flex flex-col gap-y-8 items-center">
