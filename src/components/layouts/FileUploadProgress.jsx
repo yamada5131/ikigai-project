@@ -1,8 +1,8 @@
-import React from 'react'
 import LinearProgress from '@mui/material/LinearProgress';
 import CancelIcon from '@mui/icons-material/Cancel';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import PropTypes from 'prop-types'
 function LinearProgressWithLabel(props) {
     return (
       <Box sx={{ display: 'flex', alignItems: 'center' }} className="flex-col">
@@ -17,6 +17,9 @@ function LinearProgressWithLabel(props) {
       </Box>
     );
   }
+  LinearProgressWithLabel.propTypes = {
+    value: PropTypes.number
+  }
 const FileUploadProgress = ({handleCancelUploading, progress}) => {
     
   return (
@@ -29,5 +32,8 @@ const FileUploadProgress = ({handleCancelUploading, progress}) => {
     </div>
   )
 }
-
+FileUploadProgress.propTypes = {
+  handleCancelUploading : PropTypes.func,
+  progress: PropTypes.number
+}
 export default FileUploadProgress

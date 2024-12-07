@@ -1,5 +1,61 @@
+import { useState, useEffect } from "react";
 import AppLayout from "../../components/layouts/AppLayout";
+import FileAttachment from "../../components/layouts/FileAttachment";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const CreateNotification = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [files, setFiles] = useState([
+    { id: 1, title: "file1.txt" },
+    { id: 2, title: "hello.pdf" },
+    { id: 3, title: "itss.txt" },
+    { id: 4, title: "messi.png" },
+    { id: 5, title: "goat.txt" },
+  ]);
+
+  const handleUploadClick = () => {
+    setIsLoading(true);
+  };
+
+  const handleCancelUploading = () => {
+    setIsLoading(false);
+  };
+
+  const handleCancelFileAttachForm = () => {
+    setIsModalOpen(false)
+  }
+  const handleDeleteFile = (fileId) => {
+    const newFiles = files.filter((file) => file.id !== fileId);
+    setFiles(newFiles);
+    toast("Delete Successfully!");
+  };
+  const handleSubmitFile = () => {
+    toast("Submit successfully!")
+    setIsModalOpen(false)
+  }
+  useEffect(() => {
+    let timer;
+    if (isLoading) {
+      timer = setInterval(() => {
+        setProgress((prevProgress) =>
+          prevProgress >= 100 ? 100 : prevProgress + 10
+        );
+      }, 800);
+    }
+
+    return () => clearInterval(timer);
+  }, [isLoading]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleAttachClick = () => {
+    setIsModalOpen(true); // Open the modal
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false); // Close the modal
+  };
+
   return (
     <AppLayout>
       <div className="flex items-center justify-center bg-gray-300">
@@ -43,7 +99,11 @@ const CreateNotification = () => {
                 <input type="date" />
               </div>
             </div>
-            <button className="place-self-end w-1/6 -translate-x-28 border-blue-600 border-2 rounded-full text-xl">
+            <button
+              type="button"
+              onClick={handleAttachClick} // Open the modal
+              className="place-self-end w-1/6 -translate-x-28 border-blue-600 border-2 rounded-full text-xl"
+            >
               添付
             </button>
             <button className="place-self-end w-1/6 -translate-x-28 bg-blue-700 text-white text-xl rounded-md p-2 mb-20">
@@ -51,7 +111,25 @@ const CreateNotification = () => {
             </button>
           </div>
         </form>
+        <ToastContainer autoClose={1500} pauseOnHover={false} />
       </div>
+
+      {/* File Attachment Modal */}
+      {isModalOpen && (
+        <FileAttachment
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          handleCancelUploading={handleCancelUploading}
+          progress={progress}
+          handleDeleteFile={handleDeleteFile}
+          files={files}
+          handleUploadClick={handleUploadClick}
+          isLoading={isLoading}
+          handleSubmitFile={handleSubmitFile}
+          handleCancelFileAttachForm={handleCancelFileAttachForm}
+        />
+      )}
+      
     </AppLayout>
   );
 };
