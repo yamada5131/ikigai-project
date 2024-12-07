@@ -6,6 +6,7 @@ import ClassDetails from "./pages/ClassDetails";
 import Layout from "./components/layouts/Layout";
 
 import CreateNotification from "./pages/CreateNoti";
+import NotificationDetails from "./pages/NotiDetail";
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
 import FileAttachment from "./pages/FileAttachment";
@@ -18,6 +19,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="/createNoti" element={<CreateNotification />} />
           <Route path="/fileAttach" element={<FileAttachment />} />
+          <Route path="/notidetails" element={<NotificationDetails/>} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
