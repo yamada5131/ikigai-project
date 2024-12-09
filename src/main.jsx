@@ -9,6 +9,7 @@ import CreateNotification from "./pages/CreateNoti";
 import NotificationDetails from "./pages/NotiDetail";
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
+import TeacherManagement from "./pages/TeacherManagement";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/classdetails" element={<ClassDetails />} />
+        <Route path="/teachermanagement" element={<TeacherManagement/>}/>
       </Routes>
     </BrowserRouter>
   );
