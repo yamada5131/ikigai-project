@@ -38,7 +38,7 @@ function AddTeacherModal({ closeModal }) {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium">電子メール</label>
+            <label className="block text-sm font-medium">電子メールアドレス</label>
             <input
               type="email"
               name="email"

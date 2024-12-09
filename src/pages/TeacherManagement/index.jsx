@@ -52,11 +52,11 @@ function TeacherManagement() {
             <thead className="bg-gray-200">
               <tr>
                 <th className="px-4 py-2 text-left">名前</th>
-                <th className="px-4 py-2 text-left">科目</th>
-                <th className="px-4 py-2 text-left">学年</th>
-                <th className="px-4 py-2 text-left">メール</th>
+                <th className="px-4 py-2 text-left">主題</th>
+                <th className="px-4 py-2 text-left">クラス</th>
+                <th className="px-4 py-2 text-left">電子メールアドレス</th>
                 <th className="px-4 py-2 text-left">性別</th>
-                <th className="px-4 py-2 text-left">ステータス</th>
+                <th className="px-4 py-2 text-left">ステータスクラス</th>
               </tr>
             </thead>
             <tbody>
