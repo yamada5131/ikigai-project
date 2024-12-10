@@ -17,7 +17,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/createNoti" element={<CreateNotification />} />
-          <Route path="/notidetails" element={<NotificationDetails/>} />
+          <Route path="/notidetails" element={<NotificationDetails />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -29,4 +29,3 @@ export default function App() {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
-
