@@ -9,6 +9,7 @@ import CreateNotification from "./pages/CreateNoti";
 import NotificationDetails from "./pages/NotiDetail";
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
+import SetupProfile from "./pages/Profile/SetupProfile";
 
 export default function App() {
   return (
@@ -17,7 +18,8 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/createNoti" element={<CreateNotification />} />
-          <Route path="/notidetails" element={<NotificationDetails />} />
+          <Route path="/notidetails" element={<NotificationDetails/>} />
+          <Route path="/setup-profile" element={<SetupProfile/>} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
