@@ -1,0 +1,152 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "山田太郎"
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "name": "火①",
+      "capacity": 48,
+      "date": "火曜日",
+      "time": "13:00",
+      "numberOfStudents": 48
+    },
+    {
+      "id": 2,
+      "name": "火②",
+      "capacity": 48,
+      "date": "火曜日",
+      "time": "15:00",
+      "numberOfStudents": 48
+    },
+    {
+      "id": 3,
+      "name": "水①",
+      "capacity": 48,
+      "date": "水曜日",
+      "time": "13:00",
+      "numberOfStudents": 48
+    },
+    {
+      "id": 4,
+      "name": "水②",
+      "capacity": 48,
+      "date": "水曜日",
+      "time": "15:00",
+      "numberOfStudents": 48
+    },
+    {
+      "id": 5,
+      "name": "木①",
+      "capacity": 48,
+      "date": "木曜日",
+      "time": "13:00",
+      "numberOfStudents": 48
+    },
+    {
+      "id": 6,
+      "name": "木②",
+      "capacity": 48,
+      "date": "木曜日",
+      "time": "15:00",
+      "numberOfStudents": 48
+    },
+    {
+      "id": 7,
+      "name": "金①",
+      "capacity": 48,
+      "date": "金曜日",
+      "time": "13:00",
+      "numberOfStudents": 48
+    },
+    {
+      "id": 8,
+      "name": "金②",
+      "capacity": 48,
+      "date": "金曜日",
+      "time": "15:00",
+      "numberOfStudents": 48
+    },
+    {
+      "id": 9,
+      "name": "土①",
+      "capacity": 48,
+      "date": "土曜日",
+      "time": "13:00",
+      "numberOfStudents": 48
+    },
+    {
+      "id": 10,
+      "name": "土②",
+      "capacity": 48,
+      "date": "土曜日",
+      "time": "15:00",
+      "numberOfStudents": 48
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "class_id": 1,
+      "user_id": 1,
+      "title": "お知らせ",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-02",
+      "content": "本日はクラスがありません",
+      "number_of_reservations": 28
+    },
+    {
+      "id": 2,
+      "class_id": 1,
+      "user_id": 1,
+      "title": "お知らせ",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-02",
+      "content": "本日はクラスがありません",
+      "number_of_reservations": 28
+    },
+    {
+      "id": 3,
+      "class_id": 1,
+      "user_id": 1,
+      "title": "お知らせ",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-02",
+      "content": "本日はクラスがありません",
+      "number_of_reservations": 28
+    },
+    {
+      "id": 4,
+      "class_id": 2,
+      "user_id": 1,
+      "title": "お知らせ",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-02",
+      "content": "本日はクラスがありません",
+      "number_of_reservations": 28
+    },
+    {
+      "id": 5,
+      "class_id": 2,
+      "user_id": 1,
+      "title": "お知らせ",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-02",
+      "content": "本日はクラスがありません",
+      "number_of_reservations": 28
+    },
+    {
+      "id": 6,
+      "class_id": 2,
+      "user_id": 1,
+      "title": "お知らせ",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-02",
+      "content": "本日はクラスがありません",
+      "number_of_reservations": 28
+    }
+  ]
+}
