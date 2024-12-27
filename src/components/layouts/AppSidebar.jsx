@@ -19,14 +19,14 @@ export default function AppSidebar() {
       </SidebarLogo>
       <SidebarItems>
         <SidebarItemGroup>
-          <SidebarItem href="#" icon={HiHome}>
+          <SidebarItem href="/" icon={HiHome}>
             ホームぺ-ジ
           </SidebarItem>
-          <SidebarItem href="/classdetails" icon={HiViewBoards}>
+          <SidebarItem href="/classes/:id" icon={HiViewBoards}>
             クラス詳細
           </SidebarItem>
-          <SidebarItem href="#" icon={HiInbox}>
-            Inbox
+          <SidebarItem href="/notifications/create" icon={HiInbox}>
+            通知を作成
           </SidebarItem>
           <SidebarItem href="#" icon={HiUser}>
             ユーザー

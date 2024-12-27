@@ -1,5 +1,6 @@
 import { Button, Modal } from "flowbite-react";
-import { useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+
 import AppLayout from "../components/layouts/AppLayout";
 import { useParams } from "react-router-dom";
 
