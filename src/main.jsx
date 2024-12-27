@@ -1,34 +1,40 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./components/layouts/Layout";
 import "./index.css";
 import ClassDetails from "./pages/ClassDetails";
-import Layout from "./components/layouts/Layout";
 
-import CreateNotification from "./pages/CreateNoti";
-import NotificationDetails from "./pages/NotiDetail";
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
-import TeacherManagement from "./pages/TeacherManagement";
-import SetupProfile from "./pages/Profile/SetupProfile";
+import CreateNotification from "./pages/CreateNoti";
 import Dashboard from "./pages/Dashboard";
+import NotificationDetails from "./pages/NotiDetail";
+import SetupProfile from "./pages/Profile/SetupProfile";
+import TeacherManagement from "./pages/TeacherManagement";
 
 export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Dashboard />} />
-          <Route path="/createNoti" element={<CreateNotification />} />
-          <Route path="/notidetails" element={<NotificationDetails />} />
-          <Route path="/setup-profile" element={<SetupProfile />} />
-        </Route>
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/classdetails" element={<ClassDetails />} />
-        <Route path="/teachermanagement" element={<TeacherManagement/>}/>
-      </Routes>
-    </BrowserRouter>
-  );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Layout />}>
+					<Route index element={<Dashboard />} />
+					<Route path="notifications">
+						<Route path="create" element={<CreateNotification />} />
+						<Route path=":id" element={<NotificationDetails />} />
+					</Route>
+					<Route path="profile/setup" element={<SetupProfile />} />
+					<Route path="classes/:id" element={<ClassDetails />} />
+					<Route path="teachers" element={<TeacherManagement />} />
+				</Route>
+
+				{/* Auth routes */}
+				<Route path="auth">
+					<Route path="login" element={<Login />} />
+					<Route path="register" element={<Register />} />
+				</Route>
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
