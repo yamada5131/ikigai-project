@@ -113,7 +113,7 @@
       "class_id": 1,
       "user_id": 1,
       "title": "お知らせ",
-      "start_date": "2021-01-01",
+      "start_date": "2021-11-01",
       "end_date": "2021-01-02",
       "content": "本日はクラスがありません",
       "number_of_reservations": 28
@@ -123,7 +123,7 @@
       "class_id": 2,
       "user_id": 1,
       "title": "お知らせ",
-      "start_date": "2021-01-01",
+      "start_date": "2021-01-03",
       "end_date": "2021-01-02",
       "content": "本日はクラスがありません",
       "number_of_reservations": 28
@@ -143,6 +143,26 @@
       "class_id": 2,
       "user_id": 1,
       "title": "お知らせ",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-02",
+      "content": "本日はクラスがありません",
+      "number_of_reservations": 28
+    },
+    {
+      "id": 7,
+      "class_id": 1,
+      "user_id": 1,
+      "title": "Search test",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-02",
+      "content": "本日はクラスがありません",
+      "number_of_reservations": 28
+    },
+    {
+      "id": 8,
+      "class_id": 1,
+      "user_id": 1,
+      "title": "わたしわわたしわたしわわたし",
       "start_date": "2021-01-01",
       "end_date": "2021-01-02",
       "content": "本日はクラスがありません",
