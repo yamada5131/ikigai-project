@@ -16,8 +16,12 @@ export default function MainContent() {
 	useEffect(() => {
 		fetch("http://localhost:3000/notifications")
 			.then(response => response.json())
-			.then(data => setNotifications(data.filter((notification) => notification.class_id === Number(id))))
-			.catch(error => console.error("Error fetching users:", error));
+			.then(data => {
+				const filtered = data.filter((notification) => notification.class_id === Number(id));
+				setNotifications(filtered);
+				setFilteredNotifications(filtered); // Initialize filteredNotifications
+			})
+			.catch(error => console.error("Error fetching notifications:", error));
 	}, []);
 
 	useEffect(() => {
@@ -44,7 +48,8 @@ export default function MainContent() {
     };
 
 	const handleSearch = (term) => {
-        if (term === "") {
+		setSearchTerm(term); // Update the search term state
+		if (term === "") {
 			// Reset to show all notifications when the search box is empty
 			setFilteredNotifications(notifications);
 		} else {
@@ -54,7 +59,7 @@ export default function MainContent() {
 			);
 			setFilteredNotifications(filtered);
 		}
-    };
+	};
 
 	return (
 		<AppLayout>
