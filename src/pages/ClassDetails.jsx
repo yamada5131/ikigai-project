@@ -1,5 +1,5 @@
 import { Button, Modal } from "flowbite-react";
-import { useEffect, useState, useState } from "react";
+import { useEffect, useState } from "react";
 import AppLayout from "../components/layouts/AppLayout";
 
 export default function MainContent() {
