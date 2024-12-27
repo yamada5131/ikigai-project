@@ -92,119 +92,51 @@
       "id": "1",
       "class_id": 1,
       "user_id": 1,
-      "title": "お知らせ",
-      "start_date": "2021-01-01",
-      "end_date": "2021-01-02",
-      "content": "本日はクラスがありません",
-      "number_of_reservations": 28
+      "title": "期末試験のお知らせ",
+      "start_date": "2024-01-15",
+      "end_date": "2024-01-20",
+      "content": "来週の月曜日から期末試験が始まります。試験範囲は第1章から第5章までです。準備をよろしくお願いします。",
+      "number_of_reservations": 15
     },
     {
       "id": "2",
       "class_id": 1,
       "user_id": 1,
-      "title": "お知らせ",
-      "start_date": "2021-01-01",
-      "end_date": "2021-01-02",
-      "content": "本日はクラスがありません",
+      "title": "休講のお知らせ",
+      "start_date": "2024-01-10",
+      "end_date": "2024-01-10",
+      "content": "体調不良のため、本日の授業は休講とさせていただきます。次回の授業で補講を行います。",
       "number_of_reservations": 28
     },
     {
       "id": "3",
-      "class_id": 1,
+      "class_id": 2,
       "user_id": 1,
-      "title": "お知らせ",
-      "start_date": "2021-11-01",
-      "end_date": "2021-01-02",
-      "content": "本日はクラスがありません",
-      "number_of_reservations": 28
+      "title": "課題提出期限延長について",
+      "start_date": "2024-01-05",
+      "end_date": "2024-01-12",
+      "content": "多くの学生からの要望により、レポートの提出期限を1週間延長します。新しい締め切りは1月19日となります。",
+      "number_of_reservations": 22
     },
     {
       "id": "4",
       "class_id": 2,
       "user_id": 1,
-      "title": "お知らせ",
-      "start_date": "2021-01-03",
-      "end_date": "2021-01-02",
-      "content": "本日はクラスがありません",
-      "number_of_reservations": 28
+      "title": "グループプロジェクト発表会",
+      "start_date": "2024-01-25",
+      "end_date": "2024-01-25",
+      "content": "グループプロジェクトの発表会を開催します。各グループ15分の持ち時間です。パワーポイントを使用してください。",
+      "number_of_reservations": 18
     },
     {
       "id": "5",
-      "class_id": 2,
+      "class_id": 3,
       "user_id": 1,
-      "title": "お知らせ",
-      "start_date": "2021-01-01",
-      "end_date": "2021-01-02",
-      "content": "本日はクラスがありません",
-      "number_of_reservations": 28
-    },
-    {
-      "id": "6",
-      "class_id": 2,
-      "user_id": 1,
-      "title": "お知らせ",
-      "start_date": "2021-01-01",
-      "end_date": "2021-01-02",
-      "content": "本日はクラスがありません",
-      "number_of_reservations": 28
-    },
-    {
-      "id": "6005",
-      "class_id": 1,
-      "user_id": 1,
-      "title": "namnam",
-      "start_date": "2024-12-28",
-      "end_date": "2025-01-10",
-      "content": "namnam",
-      "number_of_reservations": 0
-    },
-    {
-      "id": "2699",
-      "class_id": 1,
-      "user_id": 1,
-      "title": "hello ",
-      "start_date": "2024-12-19",
-      "end_date": "2025-01-03",
-      "content": "abcxxuysds",
-      "number_of_reservations": 0
-    },
-    {
-      "id": "d82d",
-      "class_id": 1,
-      "user_id": 1,
-      "title": "hellohello",
-      "start_date": "2024-12-19",
-      "end_date": "2025-01-03",
-      "content": "abcxxuysdsczccxzc",
-      "number_of_reservations": 0
-    },
-    {
-      "id": "30f9",
-      "class_id": 2,
-      "user_id": 1,
-      "title": "namnamnam",
-      "start_date": "2025-01-03",
-      "end_date": "2025-01-11",
-      "content": "namnamnam",
-      "number_of_reservations": 0
-      "id": 7,
-      "class_id": 1,
-      "user_id": 1,
-      "title": "Search test",
-      "start_date": "2021-01-01",
-      "end_date": "2021-01-02",
-      "content": "本日はクラスがありません",
-      "number_of_reservations": 28
-    },
-    {
-      "id": 8,
-      "class_id": 1,
-      "user_id": 1,
-      "title": "わたしわわたしわたしわわたし",
-      "start_date": "2021-01-01",
-      "end_date": "2021-01-02",
-      "content": "本日はクラスがありません",
-      "number_of_reservations": 28
+      "title": "教室変更のお知らせ",
+      "start_date": "2024-01-08",
+      "end_date": "2024-01-31",
+      "content": "工事の影響により、1月中の授業は305教室から401教室に変更となります。お間違えのないようご注意ください。",
+      "number_of_reservations": 25
     }
   ]
 }

@@ -1,5 +1,5 @@
 import { Card } from "flowbite-react";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AppLayout from "../components/layouts/AppLayout";
 export default function Dashboard() {
@@ -36,7 +36,7 @@ export default function Dashboard() {
 								key={cls.id}
 								className="no-underline"
 							>
-								<Card className="p-6 hover:shadow-lg transition-shadow duration-300 rounded-lg bg-white">
+								<Card className="hover:shadow-lg transition-shadow duration-300 rounded-lg bg-white">
 									<h1 className="text-2xl font-bold text-gray-800 mb-2">
 										{cls.name}
 									</h1>
